@@ -1,5 +1,6 @@
 # PZXCircleView
 圆环进度条，渐变圆环进度条
+![在makrdown上生成gif动画](https://github.com/PZXforXcode/PZXCircleView/blob/master/圆环.gif)
 ```
 @property(strong,nonatomic)PZXCircleView *circleProgressView;
 @property(strong,nonatomic)PZXSharpCircleView *pzxsharpCircleView;
@@ -30,4 +31,4 @@
 
 
 ```
-![在makrdown上生成gif动画](https://github.com/PZXforXcode/PZXCircleView/blob/master/圆环.gif)
+
