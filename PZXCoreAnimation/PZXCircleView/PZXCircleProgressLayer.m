@@ -22,7 +22,15 @@
 
 //    UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(radius, radius) radius:radius - lineWidth / 2 startAngle:0.f endAngle:M_PI * 2 * self.progress clockwise:YES];
     //从底部开始
-    UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(radius, radius) radius:radius - lineWidth / 2 startAngle: M_PI / 2 endAngle: (M_PI / 2)+(M_PI * 2)*self.progress clockwise:YES];
+//    UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(radius, radius) radius:radius - lineWidth / 2 startAngle: M_PI / 2 endAngle: (M_PI / 2)+(M_PI * 2)*self.progress clockwise:YES];
+    
+    //从顶部开始
+    UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(radius, radius)
+                                                        radius:radius - lineWidth / 2
+                                                    startAngle:-M_PI / 2
+                                                      endAngle:(-M_PI / 2) + (M_PI * 2) * self.progress
+                                                     clockwise:YES];
+
 //下方有缺口的类型
 //    UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(radius, radius) radius:radius - lineWidth / 2 startAngle:3*M_PI / 4  endAngle:(3*M_PI / 4)+((6*M_PI)/4)*self.progress clockwise:YES];
 

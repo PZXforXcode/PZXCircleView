@@ -54,7 +54,7 @@
     ani.delegate = self;
     [self.circleProgressLayer addAnimation:ani forKey:@"progressAni"];
     _progress = progress;
-    self.perLabel.text = [NSString stringWithFormat:@"%%%.0f",progress*100];
+    self.perLabel.text = [NSString stringWithFormat:@"%.0f%%",progress*100];
 
 }
 
